@@ -167,160 +167,172 @@ Participants should bring their laptops and plan to participate actively. By the
   <h3>Day 2</h3>
 
 
-  <h4>Data analysis with R(Hugo Tavares)</h4>
+  <h4>Data analysis with R (Hugo Tavares)</h4>
   <h4>Data visualisation with ggplot2 (Lisa Breckels)</h4>
   <h4>SQL for data management (Laurent Gatto)</h4>
       
+  <ol>
+    <li><a href="http://lgatto.github.io/sql-ecology/00-sql-introduction.html">Introduction
+	to SQL</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/01-sql-basic-queries.html">Basic
+	queries</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/02-sql-aggregation.html">Aggregation</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/03-sql-joins-aliases.html">Joins
+	and aliases</a></li>
+    <li><a href="http://lgatto.github.io/R-ecology/06-r-and-sql.html">R
+	and SQL</a> (optional)</li>
+    <!-- <li><a href="http://lgatto.github.io/sql-ecology/sql-solutions.html">SQL solutions</a></l> -->
+  </ol>
 
   <p>Data files for the workshop are
-  available <a href="http://dx.doi.org/10.6084/m9.figshare.1314459">here</a>.</p>
-      
+    available <a href="http://dx.doi.org/10.6084/m9.figshare.1314459">here</a>.</p>
+     
   <hr/>
   
-<!--
-  ETHERPAD
+  <!--
+      ETHERPAD
 
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
+      Display the Etherpad for the workshop.  You can set this up in
+      advance or on the first day; either way, make sure you push changes
+      to GitHub after you have its URL.  To create an Etherpad, go to
 
       http://etherpad.mozilla.org/YYYY-MM-DD-site
 
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
+      where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
+      '2015-06-10-esu'.
+    -->
+  {% if page.etherpad %}
+  <p>
+    <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+    <br/>
+    We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  </p>
+  {% endif %}
 
-<hr/>
+  <hr/>
 
-<!--
-  SYLLABUS
+  <!--
+      SYLLABUS
 
-  Show what topics will be covered.
+      Show what topics will be covered.
 
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
+      1. If your workshop is R rather than Python, remove the comment
+      around that section and put a comment around the Python section.
+      2. Some workshops will delete SQL.
+      3. Please make sure the list of topics is synchronized with what you
+      intend to teach.
+      4. You may need to move the div's with class="col-md-6" around inside
+      the div's with class="row" to balance the multi-column layout.
 
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-<!--
-<h2>Syllabus</h2>
+      This is one of the places where people frequently make mistakes, so
+      please preview your site before committing, and make sure to run
+      'tools/check' as well.
+    -->
+  <!--
+      <h2>Syllabus</h2>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3>The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
-    </ul>
-  </div>
+      <div class="row">
+	<div class="col-md-6">
+	  <h3>The Unix Shell</h3>
+	  <ul>
+	    <li>Files and directories</li>
+	    <li>History and tab completion</li>
+	    <li>Pipes and redirection</li>
+	    <li>Looping over files</li>
+	    <li>Creating and running shell scripts</li>
+	    <li>Finding things</li>
+	    <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+	  </ul>
+	</div>
+	<div class="col-md-6">
+	  <h3>Programming in Python</h3>
+	  <ul>
+	    <li>Using libraries</li>
+	    <li>Working with arrays</li>
+	    <li>Reading and plotting data</li>
+	    <li>Creating and using functions</li>
+	    <li>Loops and conditionals</li>
+	    <li>Defensive programming</li>
+	    <li>Using Python from the command line</li>
+	    <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+	  </ul>
+	</div>
 
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
+	<div class="col-md-6">
+	  <h3>Programming in R</h3>
+	  <ul>
+	    <li>Working with vectors and data frames</li>
+	    <li>Reading and plotting data</li>
+	    <li>Creating and using functions</li>
+	    <li>Loops and conditionals</li>
+	    <li>Using R from the command line</li>
+	    <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
+	  </ul>
+	</div>
 
-</div>
+      </div>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
+      <div class="row">
+	<div class="col-md-6">
+	  <h3>Version Control with Git</h3>
+	  <ul>
+	    <li>Creating a repository</li>
+	    <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+	    <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+	    <li>Ignoring files</li>
+	    <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+	    <li>Resolving conflicts</li>
+	    <li>Open licenses</li>
+	    <li>Where to host work, and why</li>
+	    <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
+	  </ul>
+	</div>
+	<div class="col-md-6">
+	  <h3>Managing Data with SQL</h3>
+	  <ul>
+	    <li>Reading and sorting data</li>
+	    <li>Filtering with <code>where</code></li>
+	    <li>Calculating new values on the fly</li>
+	    <li>Handling missing values</li>
+	    <li>Combining values using aggregation</li>
+	    <li>Combining information from multiple tables using <code>join</code></li>
+	    <li>Creating, modifying, and deleting data</li>
+	    <li>Programming with databases</li>
+	    <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+	  </ul>
+	</div>
+      </div>
 
 
-<hr/>
--->
+      <hr/>
+      -->
 
-<!--
-  SETUP
+  <!--
+      SETUP
 
-  Delete irrelevant sections from the setup instructions.  Each
-  section is inside a 'div' without any classes to make the beginning
-  and end easier to find.
+      Delete irrelevant sections from the setup instructions.  Each
+      section is inside a 'div' without any classes to make the beginning
+      and end easier to find.
 
-  This is the other place where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
+      This is the other place where people frequently make mistakes, so
+      please preview your site before committing, and make sure to run
+      'tools/check' as well.
+    -->
 
-<h2 id="setup">Setup</h2>
+  <h2 id="setup">Setup</h2>
 
-<p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
-described software. Please make sure to install everything (or at least to download 
-the installers) before the start of your workshop. Participants should bring and use 
-their own laptops to insure the proper setup of tools for an efficient workflow 
-once you leave the workshop.
-<p>
-Please follow these <a href=install.html>Setup Instructions</a>.
+  <p>
+    To participate in a Data Carpentry workshop, you will need working copies of the 
+    described software. Please make sure to install everything (or at least to download 
+    the installers) before the start of your workshop. Participants should bring and use 
+    their own laptops to insure the proper setup of tools for an efficient workflow 
+    once you leave the workshop.
+  <p>
+    Please follow these <a href=install.html>Setup Instructions</a>.
 
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
+  <p>
+    We maintain a list of common issues that occur during installation as a reference for instructors
+    that may be useful on the
+    <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  </p>
 
